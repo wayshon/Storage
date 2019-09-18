@@ -1,6 +1,6 @@
 {
   "name": "storage-exp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "localStorage with max-age  封装了localStorage，使之像redis那样拥有过期时间",
   "main": "./dist/index.js",
   "scripts": {
