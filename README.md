@@ -6,7 +6,7 @@ localStorage with max-age  封装了localStorage，使之像redis那样拥有过
 
 #### method
 ```
-import Storage from 'Storage.js';
+import Storage from 'storage-exp';
 
 async function test() {
   await Storage.set({
