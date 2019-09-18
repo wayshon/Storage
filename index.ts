@@ -43,7 +43,11 @@ export default class Storage {
             return undefined;
         }
         const item = JSON.parse(storeString);
-        return item.age < Date.now() ? undefined : item.value;
+        if (item.age < Date.now()) {
+            localStorage.removeItem(key);
+            return undefined;
+        }
+        return item.value;
     }
 
     static filterDeadline() {
